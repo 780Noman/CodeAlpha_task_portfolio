@@ -22,7 +22,7 @@ header {
     width: 100%;
     min-height: 100vh; /* Changed from height to min-height */
     height: auto; /* Allow header to grow */
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('[https://placehold.co/1920x1080/000000/FFFFFF?text=Background](https://placehold.co/1920x1080/000000/FFFFFF?text=Background)');
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('images.jpeg');
     background-size: cover;
     background-position: center;
     display: flex; /* Use flexbox to center content */
@@ -167,7 +167,7 @@ hr {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 
@@ -181,6 +181,8 @@ hr {
 
 .leftbio img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
     border-radius: 10px;
     filter: drop-shadow(0px 0px 20px #6ab04c);
 }
@@ -252,7 +254,7 @@ hr {
     border-color: #6ab04c;
 }
 
-#services, #projects, #experience, #contact {
+#services, #projects, #experience, #contact, #archive, #certifications {
     padding: 100px 70px;
     width: 100%;
     text-align: center;
@@ -302,22 +304,6 @@ hr {
     font-size: 3rem;
 }
 
-#projects .cardbody a {
-    margin-top: 1rem;
-    color: #6ab04c;
-    text-decoration: none;
-    font-weight: bold;
-    border: 1px solid #6ab04c;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-#projects .cardbody a:hover {
-    background: #6ab04c;
-    color: white;
-}
-
 #experience {
     text-align: left;
 }
@@ -343,6 +329,13 @@ hr {
 .experience-item p {
     font-size: 1.1em;
     color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.experience-dates {
+    font-style: italic;
+    color: #ccc;
+    font-size: 0.9em;
     margin-bottom: 1rem;
 }
 
@@ -427,7 +420,7 @@ footer {
     nav {
         padding: 0 30px;
     }
-    .container, #bio, #services, #projects, #experience, #contact {
+    .container, #bio, #services, #projects, #experience, #contact, #archive, #certifications {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -522,4 +515,133 @@ footer {
     .intro h1 {
         font-size: 2.5em;
     }
+}
+
+/* Project Card Links */
+.project-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: auto; /* Pushes links to the bottom */
+    padding-top: 1rem; /* Adds space above links */
+}
+
+.project-link {
+    color: #6ab04c;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #6ab04c;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* space between icon and text */
+}
+
+.project-link:hover {
+    background: #6ab04c;
+    color: white;
+}
+
+/* Active Navigation Link */
+.active-nav {
+    background: #6ab04c;
+    border-radius: 8px;
+}
+
+/* Homepage "View All" Button */
+.view-all-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 1rem 2rem;
+    background: #6ab04c;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background: #5a9a3c;
+}
+
+.tech-stack {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+
+.experience-dates {
+    font-style: italic;
+    color: #ccc;
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+
+/* Certifications Section */
+#certifications {
+    background-color: #222;
+}
+
+.cert-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a2a2a;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 5px solid #6ab04c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(106, 176, 76, 0.2);
+}
+
+.cert-info {
+    flex-grow: 1;
+}
+
+.cert-info h3 {
+    font-size: 1.3em;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+}
+
+.cert-info p {
+    color: #ccc;
+    text-align: left;
+    margin: 0.2rem 0 0 0;
+}
+
+.cert-link {
+    margin-left: 1rem;
+}
+
+.cert-link a {
+    color: #fff;
+    background-color: #6ab04c;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.cert-link a:hover {
+    background-color: #5a9a3c;
 }
