@@ -40,7 +40,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     padding: 0 70px;
     position: fixed;
     top: 0;
@@ -109,9 +108,9 @@ nav {
 }
 
 .right img {
-    max-width: 100%;
-    width: 350px;
-    height: 350px;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
     filter: drop-shadow(0px 0px 100px #6ab04c);
@@ -131,9 +130,10 @@ nav {
 .left p {
     line-height: 2rem;
     font-size: 1.1em;
+    text-align: justify;
 }
 
-#hire, #myp {
+.btn-hire, .btn-myp {
     text-decoration: none;
     color: white;
     padding: 1rem 2rem;
@@ -144,19 +144,19 @@ nav {
     transition: background 0.3s ease;
 }
 
-#hire {
+.btn-hire {
     background: #6ab04c;
 }
 
-#myp {
+.btn-myp {
     border: 2px solid white;
 }
 
-#hire:hover {
+.btn-hire:hover {
     background: #5a9a3c;
 }
 
-#myp:hover {
+.btn-myp:hover {
     background: #6ab04c;
     border-color: #6ab04c;
 }
@@ -196,7 +196,7 @@ hr {
     line-height: 1.8rem;
     margin: 15px 0;
     font-size: 1.1em;
-    text-align: justify;
+    text-align: justify; /* Re-added for justified text */
     hyphens: auto;
 }
 
@@ -305,8 +305,9 @@ hr {
 
 .cardbody p {
     flex-grow: 1;
-    text-align: justify;
+    text-align: justify; /* Re-added for justified text */
     hyphens: auto;
+    word-break: break-word; /* Added to help with spacing in justified text */
 }
 
 .cardbody i {
@@ -361,6 +362,9 @@ hr {
     padding-left: 1.5rem;
     position: relative;
     line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
+    word-break: break-word;
 }
 
 .experience-item li::before {
@@ -416,6 +420,27 @@ hr {
     background-color: #5a9a3c;
 }
 
+.contact-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #6ab04c; /* Primary color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: block; /* Ensure it takes full width and stacks */
+    text-align: center; /* Center text for a tags */
+    text-decoration: none; /* Remove underline for a tags */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.contact-btn:hover {
+    background-color: #5a9a3c;
+}
+
 footer {
     padding: 40px 0;
     text-align: center;
@@ -437,6 +462,9 @@ footer {
         padding-left: 30px;
         padding-right: 30px;
     }
+    #bio {
+        text-align: center; /* Added to center content within bio section */
+    }
     header .container {
         flex-direction: column;
         justify-content: center;
@@ -444,6 +472,12 @@ footer {
     }
     .left h3 {
         font-size: 3em;
+    }
+    .rightbio h1 {
+        font-size: 2.8em;
+    }
+    .intro h1 {
+        font-size: 2.8em;
     }
     .left {
         flex-basis: 100%;
@@ -461,8 +495,13 @@ footer {
     #bio {
         flex-direction: column;
     }
-    .leftbio, .rightbio {
+    .leftbio {
         flex-basis: 100%;
+    }
+    .rightbio {
+        flex-basis: 100%;
+        max-width: 600px; /* Added max-width */
+        margin: 0 auto; /* Added margin to center */
     }
     .leftbio {
         margin-bottom: 2rem;
@@ -502,7 +541,10 @@ footer {
 /* Mobile Phones */
 @media (max-width: 768px) {
     nav {
-        padding: 0 20px;
+        padding: 10px 20px;
+    }
+    .logo {
+        font-size: 1.5em; /* Reduced font size for logo on mobile */
     }
     .container {
         padding-left: 20px;
@@ -522,12 +564,15 @@ footer {
     .info div {
         flex-basis: 100%;
         margin-bottom: 1rem;
-        text-align: center;
+        text-align: left; /* Ensure text is left-aligned within the div */
     }
     .cardbody {
         flex-basis: 100%;
     }
     .intro h1 {
+        font-size: 2.5em;
+    }
+    .rightbio h1 {
         font-size: 2.5em;
     }
 
@@ -684,4 +729,9 @@ footer {
 
 .hidden-certs {
     display: none;
+}
+
+#services .cardbody p {
+    text-align: left;
+    word-break: normal;
 }

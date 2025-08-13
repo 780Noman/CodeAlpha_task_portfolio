@@ -19,7 +19,7 @@
             <div class="logo">
                 <a href="index.html" style="text-decoration: none; color: white;">Noman Amjad <i class="fas fa-brain"></i></a>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle mobile-menu-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -215,11 +215,19 @@
     </footer>
 
     <script>
-        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenu = document.querySelector('.mobile-menu-toggle');
         const menu = document.querySelector('.menu');
+        const menuLinks = document.querySelectorAll('.menu a'); // Select all menu links
 
         mobileMenu.addEventListener('click', () => {
             menu.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active'); // Remove 'active' class to close menu
+            });
         });
     </script>
 

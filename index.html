@@ -19,7 +19,7 @@
             <div class="logo">
                 Noman Amjad <i class="fas fa-brain"></i>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle mobile-menu-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -30,7 +30,7 @@
                 <a href="#services">Services</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-                <a href="#contact" id="hire-nav">Hire me</a>
+                <a href="https://wa.me/923701517247" target="_blank" id="hire-nav">Hire me</a>
             </div>
         </nav>
         <div class="container">
@@ -45,8 +45,8 @@
                     Actively seeking a challenging role where I can contribute my skills to a forward-thinking team. 
                 <br><br>
                 <div>
-                    <a href="#contact" id="hire">Hire me</a>
-                    <a href="#projects" id="myp">My Projects</a>
+                    <a href="https://wa.me/923701517247" target="_blank" class="btn-hire">Hire me</a>
+                    <a href="#projects" class="btn-myp">My Projects</a>
                 </div>
             </div>
             <div class="right">
@@ -72,7 +72,6 @@
             </div>
             <div class="info">
                 <div>
-                    <p><b>Name:</b> Noman Amjad</p>
                     <p><b>Email:</b> <a href="mailto:nomanamjad78600@gmail.com" class="email-link">nomanamjad78600@gmail.com</a></p>
                 </div>
                 <div>
@@ -88,7 +87,6 @@
                 </p>
             </div>
             <div class="link-h">
-                <a href="#contact" id="hire">Hire me</a>
                 <a href="Noman_Amjad_CV_jb2.pdf" id="cv" download>Download CV</a>
             </div>
         </div>
@@ -108,12 +106,12 @@
             <div class="cardbody">
                 <i class="fas fa-eye"></i>
                 <h2>Computer Vision</h2>
-                <p>Developing custom models and fine tuning standard object detection and classification Models(YOLOv8,ResNet-50,VGG16,Faster R-CNN)  for diverse applications.</p>
+                <p>Developing custom models and fine tuning standard object detection,Localization and classification Models(YOLOv8,ResNet-50,VGG16,Faster R-CNN etc)  for diverse applications.</p>
             </div>
             <div class="cardbody">
                 <i class="fas fa-language"></i>
                 <h2>Natural Language Processing</h2>
-                <p>Retrieval-Augmented-Generation Chatbot Developement and also Fine-tuning state-of-the-art transformer models like Ollama,BERT, T5, and GPT to solve real world problems.</p>
+                <p>Retrieval-Augmented-Generation Chatbot Developement and also Fine-tuning state-of-the-art transformer models like Ollama,BERT, T5, and GPT LangChain to solve real world problems.</p>
             </div>
             <div class="cardbody">
                 <i class="fas fa-cogs"></i>
@@ -434,16 +432,12 @@
         <div class="contact-form">
             <form action="mailto:nomanamjad78600@gmail.com" method="post" enctype="text/plain">
                 <div class="mb-3">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="mb-3">
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="mb-3">
                     <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="contact-btn">Send Email</button>
             </form>
+            <p style="text-align: center; margin: 15px 0; color: #ccc;">OR</p>
+            <a href="https://wa.me/923701517247" target="_blank" class="contact-btn">Send message on WhatsApp</a>
         </div>
     </section>
 
@@ -455,11 +449,19 @@
 
     <script>
         // Mobile menu toggle
-        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenu = document.querySelector('.mobile-menu-toggle');
         const menu = document.querySelector('.menu');
+        const menuLinks = document.querySelectorAll('.menu a'); // Select all menu links
 
         mobileMenu.addEventListener('click', () => {
             menu.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active'); // Remove 'active' class to close menu
+            });
         });
 
         // Certifications toggle
