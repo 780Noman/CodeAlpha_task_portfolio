@@ -19,7 +19,7 @@
             <div class="logo">
                 <a href="index.html" style="text-decoration: none; color: white;">Noman Amjad <i class="fas fa-brain"></i></a>
             </div>
-            <div class="menu-toggle mobile-menu-toggle">
+            <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -57,8 +57,8 @@
                 <!-- Project 2 -->
                 <div class="cardbody">
                     <h2>Automated ML Training Platform</h2>
-                    <p>An AutoML web application built with Streamlit that allows non-technical users to upload a dataset, select features and a target, and automatically train and evaluate multiple models for classification or regression, complete with visualizations.</p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong> Streamlit, Scikit-learn, Pandas, IterativeImputer</div>
+                    <p>An Custom AutoML web application built with Streamlit that allows non-technical users to upload a dataset, select features and a target, and automatically train and evaluate multiple models for classification or regression, complete with visualizations.</p>
+                    <div class="tech-stack"><strong>Tech Stack:</strong> Streamlit, Scikit-learn, Pandas, IterativeImputer,Matplotlib,seaborn</div>
                     <div class="project-links">
                         <a href="#" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                         <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -68,7 +68,7 @@
                 <div class="cardbody">
                     <h2>Titanic MLOps Pipeline</h2>
                     <p>A reproducible machine learning pipeline for the Titanic survival prediction challenge. This project focused on MLOps principles, using DVC to version datasets and track experiments, ensuring full reproducibility from data processing to model training.</p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong> Scikit-learn, DVC, MLOps, Pandas,pandas,Matplotlib</div>
+                    <div class="tech-stack"><strong>Tech Stack:</strong> Scikit-learn, DVC, MLOps, Pandas, Matplotlib</div>
                     <div class="project-links">
                         <a href="#" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                         <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -215,19 +215,11 @@
     </footer>
 
     <script>
-        const mobileMenu = document.querySelector('.mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
         const menu = document.querySelector('.menu');
-        const menuLinks = document.querySelectorAll('.menu a'); // Select all menu links
 
         mobileMenu.addEventListener('click', () => {
             menu.classList.toggle('active');
-        });
-
-        // Close mobile menu when a link is clicked
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.remove('active'); // Remove 'active' class to close menu
-            });
         });
     </script>
 
