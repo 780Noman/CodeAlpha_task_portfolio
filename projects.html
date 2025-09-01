@@ -48,7 +48,7 @@
                 <div class="cardbody">
                     <h2>Credit Risk Assessment System</h2>
                     <p>An end-to-end data science project to predict customer credit risk. The workflow included merging data sources, extensive EDA, feature engineering with statistical tests,using DT,Random Forest, XGboost and deploying the final Random Forest model on hugging face space using streamlit and docker also a standalone `.exe` file for local testing.</p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong> Scikit-learn, Pandas, Flask, PyInstaller</div>
+                    <div class="tech-stack"><strong>Tech Stack:</strong> Scikit-learn, Pandas, Flask,Matplotlib, PyInstaller</div>
                     <div class="project-links">
                         <a href="https://github.com/780Noman/Credit_Risk_assesment" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                         <a href="https://nomi78600-credit-risk-assesment.hf.space/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -57,8 +57,8 @@
                 <!-- Project 2 -->
                 <div class="cardbody">
                     <h2>Automated ML Training Platform</h2>
-                    <p>An Custom AutoML web application built with Streamlit that allows non-technical users to upload a dataset, select features and a target, and automatically train and evaluate multiple models for classification or regression, complete with visualizations.</p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong> Streamlit, Scikit-learn, Pandas, IterativeImputer,Matplotlib,seaborn</div>
+                    <p>An  AutoML web application built with Streamlit that allows non-technical users to upload a dataset, select features and a target, and automatically train and evaluate multiple models for classification or regression, complete with visualizations.</p>
+                    <div class="tech-stack"><strong>Tech Stack:</strong> Streamlit, Scikit-learn, Pandas,Matplotlib,seaborn</div>
                     <div class="project-links">
                         <a href="https://github.com/780Noman/Automated_ML_training_Plateform" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                         <a href="https://auto-ml-app-nomi.streamlit.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -77,11 +77,14 @@
                 <!-- Project 4 -->
                 <div class="cardbody">
                     <h2>Dynamic Survey Platform</h2>
-                    <p>A full-stack Django application for creating dynamic surveys and automatically visualizing results with interactive charts using Chart.js. The system features a flexible database schema and dynamic form generation.</p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong> Django, Materialize CSS, Chart.js, SQLite ,Bootstraps,HTML</div>
+                    <p> Developed a user-centric survey platform with Django for creating interactive surveys and delivering real-time,
+  data-driven insights via a clean visualization dashboard. The project was containerized with Docker and seamlessly
+  deployed to a live Hugging Face Space using a Git-based CI/CD workflow, showcasing modern full-stack development
+  skills.</p>
+                    <div class="tech-stack"><strong>Tech Stack:</strong> Python, Django, Docker, Gunicorn, SQLite,HTML/CSS/JS, Hugging Face Spaces</div>
                     <div class="project-links">
                         <a href="https://github.com/780Noman/Dynamic_Servay_Platform" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
-                        <a href="https://github.com/780Noman/Dynamic_Servay_Platform" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://nomi78600-dynamic-survey-app.hf.space/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                 </div>
                 <!-- Project 5 -->
@@ -97,7 +100,7 @@
                 <!-- Project 6 -->
                 <div class="cardbody">
                     <h2>License Plate Detection and Recognition System</h2>
-                    <p>A complete LPDRs system built by training a YOLOv8  on kaggle dataset. The pipeline integrates an OCR engine using Pytesseract to extract text from the detected plates and is deployed as an interactive Streamlit application where user can upload images and video for prediction.</p>
+                    <p>A complete LPDRs system built by training a YOLOv8  on kaggle dataset. The pipeline integrates an OCR engine using Pytesseract to extract text from the detected plates and is deployed as an interactive Streamlit application where user can upload images and video and live webcam option for prediction.</p>
                     <div class="tech-stack"><strong>Tech Stack:</strong> YOLOv8, PyTorch, Streamlit, OpenCV, Pytesseract</div>
                     <div class="project-links">
                         <a href="https://github.com/780Noman/License_plate_dect_Recog_sys" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
@@ -106,9 +109,14 @@
                 </div>
                 <!-- Project 7 -->
                 <div class="cardbody">
-                    <h2>Global Wheat Detection (Kaggle)</h2>
-                    <p>An object detection solution for a Kaggle competition, implementing a Faster R-CNN model with a ResNet-50 FPN backbone in PyTorch. The project included a preprocessing custom dataset  and an pipeline for data augmentation and produce high accuracy.</p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong> PyTorch, Faster R-CNN, ResNet-50,PIL</div>
+                    <h2>Global Wheat Detection (Kaggle competition)</h2>
+                    <p>  Developed a complete computer vision pipeline to identify and locate wheat heads in agricultural imagery.
+  The core of the project is a Faster R-CNN model with a ResNet-50 backbone, which was fine-tuned using
+  PyTorch. To ensure accessibility and ease of use, the trained model
+  was deployed to Hugging Face model hub and integrated into a Gradio web application, allowing
+  users to get real-time predictions from webcam and uploaded image,videos.Demonstrating a full
+  MLOps cycle from training and deployment to a user-facing application.</p>
+                    <div class="tech-stack"><strong>Tech Stack:</strong>Python, PyTorch (torchvision), Gradio, Hugging Face (Hub & Spaces), NumPy</div>
                     <div class="project-links">
                         <a href="https://github.com/780Noman/global-wheat-detection" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                         <a href="https://nomi78600-global-wheat-detection-app.hf.space/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -116,20 +124,27 @@
                 </div>
                 <!-- Project 8 -->
                 <div class="cardbody">
-                    <h2>Custom Keyboard & Mouse Detection</h2>
-                    <p>An end-to-end object detection project using a personally captured and manually annotated dataset from Roboflow. A YOLOv8 model was trained to achieve high accuracy in detecting custom objects.</p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong> YOLOv8, PyTorch, Roboflow, OpenCV</div>
+                    <h2>Keyboard & Mouse Detection</h2>
+                    <p>  A real-time Keyboard & Mouse detection application built with Python and the Gradio framework. This project features
+  a YOLOv8 model trained on a custom dataset, with images labeled in Roboflow and training performed in Google Colab.
+  The final application is deployed on Hugging Face Spaces and loads the trained model directly from the Hub for efficient
+  inference from an image, video, or live webcam.</p>
+                    <div class="tech-stack"><strong>Tech Stack:</strong>Python, Gradio, YOLOv8, PyTorch, OpenCV, Roboflow, Hugging Face</div>
                     <div class="project-links">
                         <a href="https://github.com/780Noman/keyboard-mouse-detection" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
-                        <a href="https://keyboard-mouse-detection-app.streamlit.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://nomi78600-keyboard-mouse-detection.hf.space/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                 </div>
                 <!-- Project 9 -->
                 <div class="cardbody">
                     <h2>Cats vs. Dogs Classification</h2>
-                    <p>Built a Convolutional Neural Network (CNN) from scratch using TensorFlow and Keras to solve a classic computer vision challenge.Users can upload an image or use their webcam to get real-time predictions. The model is hosted and loaded directly from the Hugging Face Hub, ensuring efficient deployment and model management.
+                    <p>  I engineered a deep learning model to perform binary image classification between cats and dogs. The
+  project involved building, training, and evaluating a Convolutional Neural Network (CNN) from scratch using TensorFlow
+  and Keras. The complete pipeline is deployed as a user-friendly steamlit web application on Hugging Face Spaces,
+  allowing for real-time predictions on user-uploaded images. The final trained model is also versioned and
+  shared on the Hugging Face Model Hub.
                     </p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong>Python,TensorFlow, Keras, Streamlit,PIL,numpy, Hugging Face</div>
+                    <div class="tech-stack"><strong>Tech Stack:</strong>Python, TensorFlow, Keras, NumPy, Gradio, Git, Hugging Face Platform.</div>
                     <div class="project-links">
                         <a href="https://github.com/780Noman/cat-dog-classification" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                         <a href="https://noman786-cat-dog-classification.hf.space/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -173,8 +188,15 @@
                 <!-- Project 13 -->
                 <div class="cardbody">
                     <h2>Abstractive Text Summarization with T5</h2>
-                    <p>Engineered a full pipeline to fine-tune the T5 (Text-to-Text Transfer Transformer) model for abstractive summarization. This involved creating a custom PyTorch dataset and managing the sequence-to-sequence training and inference process.</p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong> PyTorch, Hugging Face, T5, Transformers</div>
+                    <p>Building and deploying a machine learning-powered
+  application. I fine-tuned a T5 model for abstractive text
+  summarization, resulting in a model that can generate fluent and coherent summaries. The trained model is
+  publicly available on the Hugging Face Model Hub.The model is served through an interactive web application built with Streamlit and deployed on Streamlit
+  Cloud.It showcases skills in
+  model training, and
+  MLOps, delivering a complete and user-friendly solution.
+</p>
+                    <div class="tech-stack"><strong>Tech Stack:</strong>Python, Streamlit, PyTorch, Hugging Face (Transformers,Hub)</div>
                     <div class="project-links">
                         <a href="https://github.com/780Noman/t5-text-summarizer" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                         <a href="https://t5-text-summarizer.streamlit.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -183,8 +205,14 @@
                 <!-- Project 14 -->
                 <div class="cardbody">
                     <h2>Fine-Tuning GPT-2 for Text Generation</h2>
-                    <p>Fine-tuned the generative GPT-2 model on a custom text corpus using the high-level Hugging Face `Trainer` API. This project focused on domain adaptation to make the model's generated text conform to a specific style.</p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong> Hugging Face, GPT-2, Transformers,Pytorch</div>
+                    <p>
+  This project involved fine-tuning the GPT-2 model to generate text mimicking the style of news articles. I
+   engineered a complete pipeline, starting with data cleaning and preprocessing of an extensive article
+  dataset. The model was trained using PyTorch and the Hugging Face transformers library and then deployed
+  to the Hugging Face Hub. To showcase its capabilities, I developed an interactive web application with
+  Streamlit, which is hosted on streamlit cloud for live interaction.
+</p>
+                    <div class="tech-stack"><strong>Tech Stack:</strong>Python, PyTorch, Hugging Face (Transformers, Hub), Streamlit(Cloud)</div>
                     <div class="project-links">
                         <a href="https://github.com/780Noman/gpt2-fineTunned" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                         <a href="https://gpt2-finetunned-app.streamlit.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -197,17 +225,22 @@
   applications integrates the secure user authentication, dynamic course management, secure student enrollment and efficient course fee management. Leveraged
   Django's ORM for robust data handling and implemented a responsive, modern UI for seamless user experience across all
   devices.</p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong> Django, Django ORM, SQLite, HTML/CSS,MVT</div>
+                    <div class="tech-stack"><strong>Tech Stack:</strong>  Python, Django,Gunicorn, WhiteNoise, Docker,, HTML/CSS,Bootstrap,SQLite, Git</div>
                     <div class="project-links">
                         <a href="https://github.com/780Noman/School_management_system" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
-                        <a href="https://github.com/780Noman/School_management_system" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://nomi78600-school-management-sys-app.hf.space/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                 </div>
                 <!-- Project 16 -->
                 <div class="cardbody">
                     <h2>Intelligent Mobility System</h2>
-                    <p>An autonomous driving system develop in python library Pygame simulation and then  trained with Reinforcement Learning DDQN,NEAT deploy to a physical Arduino-powered car, with a Django web app for showcasing the project simulation.</p>
-                    <div class="tech-stack"><strong>Tech Stack:</strong> Reinforcement Learning (DDQN, NEAT), Pygame, Django, Arduino</div>
+                    <p>Developed Intelligent Mobility System (IMS), a web application built with Django.
+  It serves as a central hub to present and explain complex AI-driven vehicle simulations developed with DDQN and NEAT reinforcement learning algorithms,pygame. The application
+  is containerized using Docker and continuously deployed on Hugging Face Spaces, demonstrating modern
+  DevOps practices for web application delivery and management,, highlighting skills in both machine learning project presentation and scalable web
+  deployment.
+</p>
+                    <div class="tech-stack"><strong>Tech Stack:</strong> Django, Gunicorn, Docker, Python, Hugging Face Spaces,Reinforcement Learning (DDQN, NEAT), Pygame,HTML/CSS/JS</div>
                     <div class="project-links">
                         <a href="https://github.com/780Noman/Intelligent_Mobility_system_app" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                         <a href="https://nomi78600-ims.hf.space/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
